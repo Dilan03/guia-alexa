@@ -60,7 +60,7 @@ const InstructionScreen1 = () => {
          <h3 className="text-center text-secondary">{instruction.text}</h3>
          <div className="d-flex flex-column align-items-center" style={{ minHeight: '60vh' }}>
             <img src={imgstep1} alt="step1" className="img-fluid mb-4" />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, perferendis! Sit, dolorem. Possimus debitis minus perspiciatis, quia nesciunt voluptatem autem reprehenderit! At natus minus in neque consequuntur adipisci mollitia vel.</p>
+            <p>Si dices: «Alexa, borra lo que dije hoy», tu dispositivo con Alexa borrará las grabaciones de voz diarias, y si realizas esta acción cada la noche antes de acostarte, te asegurarás de no dejar rastro de tus grabaciones de Alexa.</p>
             <button
                onClick={handleStepComplete} // Marca el paso como completado
                className="btn btn-outline-primary btn-lg w-50 my-2 d-flex align-items-center justify-content-center"

@@ -12,42 +12,42 @@ import imgstep6 from '../../../assets/conf4/step6.png'
 const instructions = [
    {
       id: 1,
-      text: "Paso 1: Dí a Alexa: «Alexa, borra lo que dije hoy»",
+      text: "Paso 1: Elegir la opción de 'Más'",
       image: imgstep1,
-      textBelow: 'lorem',
+      textBelow: 'Opción de "Más"',
       icon: <FaCog />
    },
    {
       id: 2,
-      text: "Paso 2: Dí a Alexa: «Alexa, borra lo que dije hoy»",
+      text: "Paso 2: Localiza la opción de Configuración",
       image: imgstep2,
       textBelow: null,
       icon: <FaCog />
    },
    {
       id: 3,
-      text: "Paso 3: Dí a Alexa: «Alexa, borra lo que dije hoy»",
+      text: "Paso 3: Entra en la opción de Configuración del Dispositivo",
       image: imgstep3,
       textBelow: null,
       icon: <FaCog />
    },
    {
       id: 4,
-      text: "Paso 4: Dí a Alexa: «Alexa, borra lo que dije hoy»",
+      text: "Paso 4: Entra en el icono de configuración de la parte superior derecha",
       image: imgstep4,
       textBelow: null,
       icon: <FaCog />
    },
    {
       id: 5,
-      text: "Paso 5: Dí a Alexa: «Alexa, borra lo que dije hoy»",
+      text: "Paso 5: Entra en la opción de Palabra de Activación",
       image: imgstep5,
       textBelow: null,
       icon: <FaCog />
    },
    {
       id: 6,
-      text: "Paso 6: Dí a Alexa: «Alexa, borra lo que dije hoy»",
+      text: "Paso 6: Aquí, podrás cambiar la palabra de activación de tu dispositivo",
       image: imgstep6,
       textBelow: null,
       icon: <FaCog />

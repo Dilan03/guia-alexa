@@ -4,7 +4,7 @@ const Footer = () => {
          <div className="container">
             <div className="row mt-4">
                <div className="col text-center">
-                  <p className="text-white mb-0">©Equipo 1 2024 Taller de Investigación - Tecnologico de Chihuahua 2.</p>
+                  <p className="text-white mb-0">©Equipo 1 2024 Taller de Investigación 2 - Instituto Tecnologico de Chihuahua 2.</p>
                </div>
             </div>
          </div>

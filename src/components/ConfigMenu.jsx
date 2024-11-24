@@ -15,7 +15,7 @@ function ConfigMenu() {
                   <FaTrashAlt className="text-danger mx-3" style={{ fontSize: '2rem' }} />
                   <h4 className="card-title">Borra los comandos de voz a diario</h4>
                </div>
-               <p>Mantener el historial de comandos de voz puede comprometer tu privacidad y seguridad.
+               <p>Mantener el historial de comandos de voz puede comprometer tu privacidad y seguridad. 
                   Borra regularmente los registros para evitar accesos no autorizados, proteger información sensible y prevenir un perfilamiento excesivo.</p>
                <div className="mt-auto">
                   <button className="btn btn-danger float-end" onClick={() => navigate("/conf1")}>Empezar</button>

@@ -13,8 +13,7 @@ function Home() {
 
          {/* Estilo mejorado para el P */}
          <p style={{ fontSize: '1.1rem', lineHeight: '1.6', color: '#333' }}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quia iste placeat qui repellendus exercitationem ipsam saepe
-            laudantium laborum natus incidunt ipsa aperiam vero velit recusandae, sequi consequatur atque nobis!
+         Descubre cómo configurar tu dispositivo Alexa de manera correcta para disfrutar de sus funciones mientras proteges tu privacidad. Aquí encontrarás pasos sencillos e interactivos para mitigar riesgos como accesos no autorizados o grabaciones no deseadas. Optimiza tu experiencia con Alexa de forma segura y confiable. ¡Comienza ahora!
          </p>
 
          {/* Contenedor con altura y centrado responsivo */}
@@ -46,45 +45,45 @@ function Home() {
                Acerca de Alexa Secure
             </h2>
             <p style={{ fontSize: '1.1rem', lineHeight: '1.6', color: '#333' }}>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique magnam doloribus veritatis, distinctio hic perferendis, rerum libero quibusdam doloremque quaerat adipisci perspiciatis quasi eveniet mollitia natus ut voluptatum tempore! Libero.
+            Alexa Secure es una guía interactiva que te ayuda a configurar tu Alexa de forma fácil y segura. Nuestro objetivo es proteger tu privacidad mientras disfrutas de todas sus funciones, minimizando riesgos como accesos no autorizados o uso indebido de datos. Tu seguridad, nuestra prioridad.
             </p>
             <br /><br /><br /><br /><br /><br /><br />
             <h2 className="text-center my-5" style={{ fontSize: '2.5rem', fontWeight: 'bold', color: '#007bff' }}>
-               Equipo
+               Equipo 1 Taller de Investigación 2
             </h2>
             <div className="container mt-5">
                <div className="row text-center">
                   {/* Columna 1 */}
                   <div className="col-md-4 mb-4">
                      <img
-                        src="https://via.placeholder.com/150"
+                        src="elias.jpg"
                         alt="Imagen 1"
                         className="img-fluid rounded-circle mb-3"
                         style={{ width: '150px', height: '150px', objectFit: 'cover' }}
                      />
-                     <p>Descripción corta de la imagen 1.</p>
+                     <p>Jesús Elías Sierra Ruíz</p>
                   </div>
 
                   {/* Columna 2 */}
                   <div className="col-md-4 mb-4">
                      <img
-                        src="https://via.placeholder.com/150"
+                        src="dilan.png"
                         alt="Imagen 2"
                         className="img-fluid rounded-circle mb-3"
                         style={{ width: '150px', height: '150px', objectFit: 'cover' }}
                      />
-                     <p>Descripción corta de la imagen 2.</p>
+                     <p>Dilan Mauricio García Hernández</p>
                   </div>
 
                   {/* Columna 3 */}
                   <div className="col-md-4 mb-4">
                      <img
-                        src="https://via.placeholder.com/150"
+                        src="israel.png"
                         alt="Imagen 3"
                         className="img-fluid rounded-circle mb-3"
                         style={{ width: '150px', height: '150px', objectFit: 'cover' }}
                      />
-                     <p>Descripción corta de la imagen 3.</p>
+                     <p>Israel Chacón Rojo</p>
                   </div>
                </div>
             </div>

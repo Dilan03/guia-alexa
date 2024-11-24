@@ -17,79 +17,79 @@ import imgstep11 from '../../../assets/conf5/step11.png'
 const instructions = [
    {
       id: 1,
-      text: "Paso 1: Dí a Alexa: «Alexa, borra lo que dije hoy»",
+      text: "Paso 1: Entra en la opción de 'Más'",
       image: imgstep1,
-      textBelow: 'lorem',
+      textBelow: 'Opción de "Más"',
       icon: <FaCog />
    },
    {
       id: 2,
-      text: "Paso 2: Dí a Alexa: «Alexa, borra lo que dije hoy»",
+      text: "Paso 2: Entra en la opción de Configuración",
       image: imgstep2,
       textBelow: null,
       icon: <FaCog />
    },
    {
       id: 3,
-      text: "Paso 3: Dí a Alexa: «Alexa, borra lo que dije hoy»",
+      text: "Paso 3: Entra en la opción de Configuración de la Cuenta",
       image: imgstep3,
       textBelow: null,
       icon: <FaCog />
    },
    {
       id: 4,
-      text: "Paso 4: Dí a Alexa: «Alexa, borra lo que dije hoy»",
+      text: "Paso 4: Entra en la opción de Compras por voz",
       image: imgstep4,
       textBelow: null,
       icon: <FaCog />
    },
    {
       id: 5,
-      text: "Paso 5: Dí a Alexa: «Alexa, borra lo que dije hoy»",
+      text: "Paso 5: Desactiva las compras por voz",
       image: imgstep5,
       textBelow: null,
       icon: <FaCog />
    },
    {
       id: 6,
-      text: "Paso 6: Dí a Alexa: «Alexa, borra lo que dije hoy»",
+      text: "Paso 6: Entra de nuevo en la opción de 'Más'",
       image: imgstep6,
       textBelow: null,
       icon: <FaCog />
    },
    {
       id: 7,
-      text: "Paso 7: Dí a Alexa: «Alexa, borra lo que dije hoy»",
+      text: "Paso 7: Entra de nuevo en la opción de Configuración",
       image: imgstep7,
       textBelow: null,
       icon: <FaCog />
    },
    {
       id: 8,
-      text: "Paso 8: Dí a Alexa: «Alexa, borra lo que dije hoy»",
+      text: "Paso 8: Entra en la opción de Privacidad de Alexa",
       image: imgstep8,
       textBelow: null,
       icon: <FaCog />
    },
    {
       id: 9,
-      text: "Paso 9: Dí a Alexa: «Alexa, borra lo que dije hoy»",
+      text: "Paso 9: Entra en la opción de Administrar Datos de Alexa",
       image: imgstep9,
       textBelow: null,
       icon: <FaCog />
    },
    {
       id: 10,
-      text: "Paso 10: Dí a Alexa: «Alexa, borra lo que dije hoy»",
+      text: "Paso 10: Localiza la opción de Controles de Compra",
       image: imgstep10,
       textBelow: null,
       icon: <FaCog />
    },
    {
       id: 11,
-      text: "Paso 11: Dí a Alexa: «Alexa, borra lo que dije hoy»",
+      text: "Paso 11: Elige la opción recomendada, no dejes la primera",
       image: imgstep11,
-      textBelow: 'jeje',
+      textBelow: 'Es recomendable la segunda opción, con un código de voz',
       icon: <FaCog />
    },
 ];

@@ -16,63 +16,65 @@ import imgstep9 from '../../../assets/conf2/step9.png'
 const instructions = [
    {
       id: 1,
-      text: "Paso 1: Dí a Alexa: «Alexa, borra lo que dije hoy»",
+      text: "Paso 1: Toca en la parte de abajo de tu aplicación en 'Más'",
       image: imgstep1,
-      textBelow: 'lorem',
+      textBelow: 'Opción de "Más"',
       icon: <FaCog />
    },
    {
       id: 2,
-      text: "Paso 2: Dí a Alexa: «Alexa, borra lo que dije hoy»",
+      text: "Paso 2: Localiza el icono de configuración",
       image: imgstep2,
       textBelow: null,
       icon: <FaCog />
    },
    {
       id: 3,
-      text: "Paso 3: Dí a Alexa: «Alexa, borra lo que dije hoy»",
+      text: "Paso 3: Localiza la opción de  «Privacidad de Alexa»",
       image: imgstep3,
       textBelow: null,
       icon: <FaCog />
    },
    {
       id: 4,
-      text: "Paso 4: Dí a Alexa: «Alexa, borra lo que dije hoy»",
+      text: "Paso 4: Entra a la opción de: «Revisar el Historial de Voz»",
       image: imgstep4,
       textBelow: null,
       icon: <FaCog />
    },
    {
       id: 5,
-      text: "Paso 5: Dí a Alexa: «Alexa, borra lo que dije hoy»",
+      text: "Paso 5: Darle en la opción de filtros del historial de Voz",
       image: imgstep5,
       textBelow: null,
       icon: <FaCog />
    },
    {
       id: 6,
-      text: "Paso 6: Dí a Alexa: «Alexa, borra lo que dije hoy»",
+      text: "Paso 6: Elegir todo el historial y todos los dispositivos y perfiles",
       image: imgstep6,
       textBelow: null,
+      textBelow: 'Dar en la opción "Aplicar cambios"',
       icon: <FaCog />
    },
    {
       id: 7,
-      text: "Paso 7: Dí a Alexa: «Alexa, borra lo que dije hoy»",
+      text: "Paso 7: Se listará todo el historial",
       image: imgstep7,
       textBelow: null,
+      textBelow: 'Dar en el icono de eliminar',
       icon: <FaCog />
    },
    {
       id: 8,
-      text: "Paso 8: Dí a Alexa: «Alexa, borra lo que dije hoy»",
+      text: "Paso 8: Confirmar la eliminación del historial",
       image: imgstep8,
       textBelow: null,
       icon: <FaCog />
    },
    {
       id: 9,
-      text: "Paso 9: Dí a Alexa: «Alexa, borra lo que dije hoy»",
+      text: "Paso 9: El Historial se elimina correctamente",
       image: imgstep9,
       textBelow: null,
       icon: <FaCog />
