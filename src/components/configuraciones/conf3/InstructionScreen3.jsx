@@ -11,35 +11,35 @@ import imgstep5 from '../../../assets/conf3/step5.png'
 const instructions = [
    {
       id: 1,
-      text: "Paso 1: Dí a Alexa: «Alexa, borra lo que dije hoy»",
+      text: "Paso 1: Buscar la opción de 'Más'",
       image: imgstep1,
-      textBelow: 'lorem',
+      textBelow: 'Opción de "Más"',
       icon: <FaCog />
    },
    {
       id: 2,
-      text: "Paso 2: Dí a Alexa: «Alexa, borra lo que dije hoy»",
+      text: "Paso 2: Localiza la opción de configuración y entra",
       image: imgstep2,
       textBelow: null,
       icon: <FaCog />
    },
    {
       id: 3,
-      text: "Paso 3: Dí a Alexa: «Alexa, borra lo que dije hoy»",
+      text: "Paso 3: Localiza la opción de Configuración del Dispositivo",
       image: imgstep3,
       textBelow: null,
       icon: <FaCog />
    },
    {
       id: 4,
-      text: "Paso 4: Dí a Alexa: «Alexa, borra lo que dije hoy»",
+      text: "Paso 4: Entra en la opción de Echo Dot",
       image: imgstep4,
       textBelow: null,
       icon: <FaCog />
    },
    {
       id: 5,
-      text: "Paso 5: Dí a Alexa: «Alexa, borra lo que dije hoy»",
+      text: "Paso 5: Dentro de este menú, haz click en la opción de cámara para desactivarla",
       image: imgstep5,
       textBelow: null,
       icon: <FaCog />
