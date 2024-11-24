@@ -53,7 +53,6 @@ const instructions = [
       id: 6,
       text: "Paso 6: Elegir todo el historial y todos los dispositivos y perfiles",
       image: imgstep6,
-      textBelow: null,
       textBelow: 'Dar en la opción "Aplicar cambios"',
       icon: <FaCog />
    },
@@ -61,7 +60,6 @@ const instructions = [
       id: 7,
       text: "Paso 7: Se listará todo el historial",
       image: imgstep7,
-      textBelow: null,
       textBelow: 'Dar en el icono de eliminar',
       icon: <FaCog />
    },

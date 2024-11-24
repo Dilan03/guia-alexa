@@ -11,7 +11,7 @@ const instructions = [
       text: "Paso 1: Dí a Alexa: «Alexa, borra lo que dije hoy»",
       image1: imgstep1,
       image2: null,
-      textBelow: 'lorem',
+      textBelow: null,
       icon: <FaCog />
    }
 ];
