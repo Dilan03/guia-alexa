@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { ProgressBar, Modal, Button } from 'react-bootstrap';
 import { FaArrowLeft, FaArrowRight, FaCog, FaSmile, FaMicrophoneSlash } from 'react-icons/fa';
+import { useNavigate } from "react-router-dom";
 import imgstep1 from '../../../assets/conf3/step1.png'
 import imgstep2 from '../../../assets/conf3/step2.png'
 import imgstep3 from '../../../assets/conf3/step3.png'
@@ -47,6 +48,7 @@ const instructions = [
 ];
 
 const InstructionScreen3 = () => {
+   const navigate = useNavigate();
    const [currentStep, setCurrentStep] = useState(0);  // Paso actual, por defecto es 0
    const [completedSteps, setCompletedSteps] = useState([]);  // Para llevar un registro de los pasos completados
    const [showModal, setShowModal] = useState(false);  // Estado para controlar la visibilidad del modal
@@ -74,12 +76,12 @@ const InstructionScreen3 = () => {
    };
 
    // Manejador para cerrar el modal y redirigir a la configuración
-   const handleCloseModal = () => {
-      setShowModal(false); // Cierra el modal
-      // Aquí puedes redirigir al menú de configuraciones
-      // Usando react-router-dom, por ejemplo:
-      window.location.href = 'https://guia-alexa.firebaseapp.com/config-menu'; // O utilizar history.push si usas react-router
-   };
+   // const handleCloseModal = () => {
+   //    setShowModal(false); // Cierra el modal
+   //    // Aquí puedes redirigir al menú de configuraciones
+   //    // Usando react-router-dom, por ejemplo:
+   //    window.location.href = 'https://guia-alexa.firebaseapp.com/config-menu'; // O utilizar history.push si usas react-router
+   // };
 
    return (
       <div className="container my-5">
@@ -119,7 +121,7 @@ const InstructionScreen3 = () => {
          </div>
 
          {/* Modal de felicitación */}
-         <Modal show={showModal} onHide={handleCloseModal} centered>
+         <Modal show={showModal} onHide={() => navigate("/config-menu")} centered>
             <Modal.Header closeButton>
                <Modal.Title>¡Felicidades!</Modal.Title>
             </Modal.Header>
@@ -129,7 +131,7 @@ const InstructionScreen3 = () => {
                <p>¡Gracias por seguir las instrucciones!</p>
             </Modal.Body>
             <Modal.Footer>
-               <Button variant="secondary" onClick={handleCloseModal}>
+               <Button variant="secondary" onClick={() => navigate("/config-menu")}>
                   Volver al Menú de Configuración
                </Button>
             </Modal.Footer>
