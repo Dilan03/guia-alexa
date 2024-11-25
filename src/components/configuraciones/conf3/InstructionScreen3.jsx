@@ -78,7 +78,7 @@ const InstructionScreen3 = () => {
       setShowModal(false); // Cierra el modal
       // Aquí puedes redirigir al menú de configuraciones
       // Usando react-router-dom, por ejemplo:
-      window.location.href = '/config-menu'; // O utilizar history.push si usas react-router
+      window.location.href = 'https://guia-alexa.firebaseapp.com/config-menu'; // O utilizar history.push si usas react-router
    };
 
    return (

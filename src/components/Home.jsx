@@ -13,7 +13,7 @@ function Home() {
 
          {/* Estilo mejorado para el P */}
          <p style={{ fontSize: '1.1rem', lineHeight: '1.6', color: '#333' }}>
-         Descubre cómo configurar tu dispositivo Alexa de manera correcta para disfrutar de sus funciones mientras proteges tu privacidad. Aquí encontrarás pasos sencillos e interactivos para mitigar riesgos como accesos no autorizados o grabaciones no deseadas. Optimiza tu experiencia con Alexa de forma segura y confiable. ¡Comienza ahora!
+            Descubre cómo configurar tu dispositivo Alexa de manera correcta para disfrutar de sus funciones mientras proteges tu privacidad. Aquí encontrarás pasos sencillos e interactivos para mitigar riesgos como accesos no autorizados o grabaciones no deseadas. Optimiza tu experiencia con Alexa de forma segura y confiable. ¡Comienza ahora!
          </p>
 
          {/* Contenedor con altura y centrado responsivo */}
@@ -45,7 +45,7 @@ function Home() {
                Acerca de Alexa Secure
             </h2>
             <p style={{ fontSize: '1.1rem', lineHeight: '1.6', color: '#333' }}>
-            Alexa Secure es una guía interactiva que te ayuda a configurar tu Alexa de forma fácil y segura. Nuestro objetivo es proteger tu privacidad mientras disfrutas de todas sus funciones, minimizando riesgos como accesos no autorizados o uso indebido de datos. Tu seguridad, nuestra prioridad.
+               Alexa Secure es una guía interactiva que te ayuda a configurar tu Alexa de forma fácil y segura. Nuestro objetivo es proteger tu privacidad mientras disfrutas de todas sus funciones, minimizando riesgos como accesos no autorizados o uso indebido de datos. Tu seguridad, nuestra prioridad.
             </p>
             <br /><br /><br /><br /><br /><br /><br />
             <h2 className="text-center my-5" style={{ fontSize: '2.5rem', fontWeight: 'bold', color: '#007bff' }}>
@@ -56,7 +56,7 @@ function Home() {
                   {/* Columna 1 */}
                   <div className="col-md-4 mb-4">
                      <img
-                        src="elias.jpg"
+                        src="https://avatars.githubusercontent.com/u/119697279?v=4"
                         alt="Imagen 1"
                         className="img-fluid rounded-circle mb-3"
                         style={{ width: '150px', height: '150px', objectFit: 'cover' }}
@@ -67,7 +67,7 @@ function Home() {
                   {/* Columna 2 */}
                   <div className="col-md-4 mb-4">
                      <img
-                        src="dilan.png"
+                        src="https://avatars.githubusercontent.com/u/90223932?v=4"
                         alt="Imagen 2"
                         className="img-fluid rounded-circle mb-3"
                         style={{ width: '150px', height: '150px', objectFit: 'cover' }}
@@ -78,7 +78,7 @@ function Home() {
                   {/* Columna 3 */}
                   <div className="col-md-4 mb-4">
                      <img
-                        src="israel.png"
+                        src="https://avatars.githubusercontent.com/u/51183597?v=4"
                         alt="Imagen 3"
                         className="img-fluid rounded-circle mb-3"
                         style={{ width: '150px', height: '150px', objectFit: 'cover' }}
