@@ -15,10 +15,10 @@ function ConfigMenu() {
                   <FaTrashAlt className="text-danger mx-3" style={{ fontSize: '2rem' }} />
                   <h4 className="card-title">Borra los comandos de voz a diario</h4>
                </div>
-               <p>Mantener el historial de comandos de voz puede comprometer tu privacidad y seguridad. 
+               <p>Mantener el historial de comandos de voz puede comprometer tu privacidad y seguridad.
                   Borra regularmente los registros para evitar accesos no autorizados, proteger información sensible y prevenir un perfilamiento excesivo.</p>
                <div className="mt-auto">
-                  <button className="btn btn-danger float-end" onClick={() => navigate("/conf1")}>Empezar</button>
+                  <button className="btn btn-primary float-end" onClick={() => navigate("/conf1")}>Empezar</button>
                </div>
             </div>
 
@@ -30,7 +30,7 @@ function ConfigMenu() {
                </div>
                <p>Es importante borrar regularmente el historial de comandos de voz para proteger tu privacidad y evitar que datos sensibles queden almacenados en los servidores de Amazon.</p>
                <div className="mt-auto">
-                  <button className="btn btn-warning float-end" onClick={() => navigate("/conf2")}>Empezar</button>
+                  <button className="btn btn-primary float-end" onClick={() => navigate("/conf2")}>Empezar</button>
                </div>
             </div>
 
@@ -42,7 +42,7 @@ function ConfigMenu() {
                </div>
                <p>Es recomendable desactivar el micrófono y la cámara de Alexa cuando no se esté utilizando. Esto ayuda a proteger tu privacidad evitando grabaciones no deseadas y a prevenir posibles accesos no autorizados al dispositivo.</p>
                <div className="mt-auto">
-                  <button className="btn btn-info float-end" onClick={() => navigate("/conf3")}>Empezar</button>
+                  <button className="btn btn-primary float-end" onClick={() => navigate("/conf3")}>Empezar</button>
                </div>
             </div>
 
@@ -54,7 +54,7 @@ function ConfigMenu() {
                </div>
                <p>Cambiar la palabra de activación de Alexa a una menos común puede ayudar a reducir las activaciones accidentales. Esto también mejora la seguridad, ya que dificulta que personas no autorizadas interactúen con el dispositivo sin tu consentimiento.</p>
                <div className="mt-auto">
-                  <button className="btn btn-success float-end" onClick={() => navigate("/conf4")}>Empezar</button>
+                  <button className="btn btn-primary float-end" onClick={() => navigate("/conf4")}>Empezar</button>
                </div>
             </div>
 
