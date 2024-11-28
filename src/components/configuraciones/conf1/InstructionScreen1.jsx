@@ -63,28 +63,21 @@ const InstructionScreen1 = () => {
          <div className="d-flex flex-column align-items-center" style={{ minHeight: '60vh' }}>
             <img src={imgstep1} alt="step1" className="img-fluid mb-4" />
             <p>Si dices: «Alexa, borra lo que dije hoy», tu dispositivo con Alexa borrará las grabaciones de voz diarias, y si realizas esta acción cada la noche antes de acostarte, te asegurarás de no dejar rastro de tus grabaciones de Alexa.</p>
-            <button
-               onClick={handleStepComplete} // Marca el paso como completado
-               className="btn btn-outline-primary btn-lg w-50 my-2 d-flex align-items-center justify-content-center"
-            >
-               <span style={{ marginRight: '10px' }}>{instruction.icon}</span>
-               {completedSteps.includes(instruction.id) ? "Paso completado" : "Marcar como completado"}
-            </button>
          </div>
 
          <ProgressBar now={progress} label={`${Math.round(progress)}%`} className="mb-4" />
-         <div className="d-flex justify-content-between mt-4">
+         <div className="d-flex justify-content-center mt-4">
             {currentStep > 0 && (
-               <button className="btn btn-secondary" onClick={handlePreviousStep}>
+               <button className="btn btn-secondary mx-2" onClick={handlePreviousStep}>
                   <FaArrowLeft /> Anterior
                </button>
             )}
             {currentStep < instructions.length - 1 ? (
-               <button className="btn btn-primary" onClick={handleStepComplete}>
+               <button className="btn btn-primary mx-2" onClick={handleStepComplete}>
                   Siguiente <FaArrowRight />
                </button>
             ) : (
-               <button className="btn btn-success" onClick={handleFinish}>
+               <button className="btn btn-danger mx-2" onClick={handleFinish}>
                   Finalizar
                </button>
             )}
