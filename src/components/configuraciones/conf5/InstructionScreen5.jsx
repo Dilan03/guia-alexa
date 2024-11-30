@@ -20,21 +20,21 @@ const instructions = [
       id: 1,
       text: "Paso 1: Entra en la opción de 'Más'",
       image: imgstep1,
-      textBelow: 'Opción de "Más"',
+      textBelow: 'Localizar la opcion de "Más" donde indica la flecha',
       icon: <FaCog />
    },
    {
       id: 2,
       text: "Paso 2: Entra en la opción de Configuración",
       image: imgstep2,
-      textBelow: null,
+      textBelow: "En el icono del engranaje",
       icon: <FaCog />
    },
    {
       id: 3,
       text: "Paso 3: Entra en la opción de Configuración de la Cuenta",
       image: imgstep3,
-      textBelow: null,
+      textBelow: "En la segunda opcion de arriba a abajo",
       icon: <FaCog />
    },
    {
@@ -48,49 +48,49 @@ const instructions = [
       id: 5,
       text: "Paso 5: Desactiva las compras por voz",
       image: imgstep5,
-      textBelow: null,
+      textBelow: "El circulo se debe mover al izquierda",
       icon: <FaCog />
    },
    {
       id: 6,
       text: "Paso 6: Entra de nuevo en la opción de 'Más'",
       image: imgstep6,
-      textBelow: null,
+      textBelow: "Ahora requerimos configurar un codigo de confirmación de 4 dígitos que nos pedirá antes de realizar cualquier compra mediante voz, por eso volvemos al principio.",
       icon: <FaCog />
    },
    {
       id: 7,
       text: "Paso 7: Entra de nuevo en la opción de Configuración",
       image: imgstep7,
-      textBelow: null,
+      textBelow: "En el icono del engranaje",
       icon: <FaCog />
    },
    {
       id: 8,
       text: "Paso 8: Entra en la opción de Privacidad de Alexa",
       image: imgstep8,
-      textBelow: null,
+      textBelow: "En la octava opcion de arriba a abajo",
       icon: <FaCog />
    },
    {
       id: 9,
       text: "Paso 9: Entra en la opción de Administrar Datos de Alexa",
       image: imgstep9,
-      textBelow: null,
+      textBelow: "Damos un poco de scroll hasta localizar esta opcion",
       icon: <FaCog />
    },
    {
       id: 10,
       text: "Paso 10: Localiza la opción de Controles de Compra",
       image: imgstep10,
-      textBelow: null,
+      textBelow: "Ubica esta opcion que está dentro del recuadro Compra por voz",
       icon: <FaCog />
    },
    {
       id: 11,
       text: "Paso 11: Elige la opción recomendada, no dejes la primera",
       image: imgstep11,
-      textBelow: 'Es recomendable la segunda opción, con un código de voz',
+      textBelow: 'Por defecto está la primera, elige "Cualquier persona con un código de voz", luego le das a confirmar',
       icon: <FaCog />
    },
 ];
@@ -140,7 +140,9 @@ const InstructionScreen5 = () => {
          <h3 className="text-center text-secondary">{instruction.text}</h3>
          <div className="d-flex flex-column align-items-center" style={{ minHeight: '60vh' }}>
             <img src={instruction.image} alt="step1" className="img-fluid mb-4" />
-            <p>{instruction.textBelow}</p>
+            <div className="bg-white rounded shadow w-75 mb-2">
+               <p className="text-center m-0" style={{ fontSize: '1.1rem', color: '#333' }}>{instruction.textBelow}</p>
+            </div>
          </div>
 
          <ProgressBar now={progress} label={`${Math.round(progress)}%`} className="mb-4" />

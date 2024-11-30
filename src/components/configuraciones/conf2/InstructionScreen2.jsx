@@ -19,14 +19,14 @@ const instructions = [
       id: 1,
       text: "Paso 1: Toca en la parte de abajo de tu aplicación en 'Más'",
       image: imgstep1,
-      textBelow: 'Opción de "Más"',
+      textBelow: 'Localizar la opcion de "Más" donde indica la flecha',
       icon: <FaCog />
    },
    {
       id: 2,
       text: "Paso 2: Localiza el icono de configuración",
       image: imgstep2,
-      textBelow: null,
+      textBelow: "En el icono del engranaje",
       icon: <FaCog />
    },
    {
@@ -40,42 +40,42 @@ const instructions = [
       id: 4,
       text: "Paso 4: Entra a la opción de: «Revisar el Historial de Voz»",
       image: imgstep4,
-      textBelow: null,
+      textBelow: "Tienes que tocar el icono > ",
       icon: <FaCog />
    },
    {
       id: 5,
       text: "Paso 5: Darle en la opción de filtros del historial de Voz",
       image: imgstep5,
-      textBelow: null,
+      textBelow: "Tienes que tocar el icono de la derecha ",
       icon: <FaCog />
    },
    {
       id: 6,
       text: "Paso 6: Elegir todo el historial y todos los dispositivos y perfiles",
       image: imgstep6,
-      textBelow: 'Dar en la opción "Aplicar cambios"',
+      textBelow: 'Hay que marcar la casilla "Todo el Historial", luego la casilla "Todos los dispositivos y perfiles" y por ultimo en el boton de aplicar los cambios',
       icon: <FaCog />
    },
    {
       id: 7,
       text: "Paso 7: Se listará todo el historial",
       image: imgstep7,
-      textBelow: 'Dar en el icono de eliminar',
+      textBelow: 'hay que dar en el icono de eliminar (bote de basura) para eliminar todo el historial',
       icon: <FaCog />
    },
    {
       id: 8,
       text: "Paso 8: Confirmar la eliminación del historial",
       image: imgstep8,
-      textBelow: null,
+      textBelow: "Dar en el boton rojo de eliminar",
       icon: <FaCog />
    },
    {
       id: 9,
       text: "Paso 9: El Historial se elimina correctamente",
       image: imgstep9,
-      textBelow: null,
+      textBelow: "Ya habremos eliminado el historial de voz",
       icon: <FaCog />
    },
 ];
@@ -125,7 +125,9 @@ const InstructionScreen2 = () => {
          <h3 className="text-center text-secondary">{instruction.text}</h3>
          <div className="d-flex flex-column align-items-center" style={{ minHeight: '60vh' }}>
             <img src={instruction.image} alt="step1" className="img-fluid mb-4" />
-            <p>{instruction.textBelow}</p>
+            <div className="bg-white rounded shadow w-75 mb-2">
+               <p className="text-center m-0" style={{ fontSize: '1.1rem', color: '#333' }}>{instruction.textBelow}</p>
+            </div>
          </div>
 
          <ProgressBar now={progress} label={`${Math.round(progress)}%`} className="mb-4" />

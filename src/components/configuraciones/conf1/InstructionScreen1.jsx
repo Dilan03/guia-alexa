@@ -62,7 +62,11 @@ const InstructionScreen1 = () => {
          <h3 className="text-center text-secondary">{instruction.text}</h3>
          <div className="d-flex flex-column align-items-center" style={{ minHeight: '60vh' }}>
             <img src={imgstep1} alt="step1" className="img-fluid mb-4 rounded-2" />
-            <p>Si dices: «Alexa, borra lo que dije hoy», tu dispositivo con Alexa borrará las grabaciones de voz diarias, y si realizas esta acción cada la noche antes de acostarte, te asegurarás de no dejar rastro de tus grabaciones de Alexa.</p>
+            <div className="bg-white rounded shadow w-75 p-1 mb-2">
+               <p className="text-center m-0" style={{ fontSize: '1.1rem', color: '#333' }}>
+                  Si dices: «Alexa, borra lo que dije hoy», tu dispositivo con Alexa borrará las grabaciones de voz diarias.
+               </p>
+            </div>
          </div>
 
          <ProgressBar now={progress} label={`${Math.round(progress)}%`} className="mb-4" />

@@ -14,6 +14,16 @@ class MessageParser {
          this.actionProvider.bye();
       } else if (lowercase.includes("borrar historial de voz") || lowercase.includes("comandos de voz") || lowercase.includes("comando de voz") || lowercase.includes("borrar el historial de voz") || lowercase.includes("borro el historial de voz")) {
          this.actionProvider.borrarHistorial();
+      } else if (
+         lowercase.includes("historial de voz") ||
+         lowercase.includes("grabaciones") ||
+         lowercase.includes("registro de voz") ||
+         lowercase.includes("conversaciones grabadas") ||
+         lowercase.includes("privacidad de voz") ||
+         lowercase.includes("datos de voz") ||
+         lowercase.includes("archivos de voz")
+      ) {
+         this.actionProvider.acercaHistorialVoz();
       } else if (lowercase.includes("ubicación") || lowercase.includes("dónde colocar") || lowercase.includes("ubicacion") || lowercase.includes("donde colocar")) {
          this.actionProvider.ubicacionDispositivo();
       } else if (lowercase.includes("apagar micrófono") || lowercase.includes("micrófono") || lowercase.includes("apagar microfono") || lowercase.includes("microfono")) {

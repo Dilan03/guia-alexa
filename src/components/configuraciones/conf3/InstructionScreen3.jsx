@@ -14,28 +14,28 @@ const instructions = [
       id: 1,
       text: "Paso 1: Buscar la opción de 'Más'",
       image: imgstep1,
-      textBelow: 'Opción de "Más"',
+      textBelow: 'Localizar la opcion de "Más" donde indica la flecha',
       icon: <FaCog />
    },
    {
       id: 2,
       text: "Paso 2: Localiza la opción de configuración y entra",
       image: imgstep2,
-      textBelow: null,
+      textBelow: "En el icono del engranaje",
       icon: <FaCog />
    },
    {
       id: 3,
       text: "Paso 3: Localiza la opción de Configuración del Dispositivo",
       image: imgstep3,
-      textBelow: null,
+      textBelow: "En la tercera opcion de arriba a abajo",
       icon: <FaCog />
    },
    {
       id: 4,
       text: "Paso 4: Entra en la opción de Echo Dot",
       image: imgstep4,
-      textBelow: null,
+      textBelow: "Se mostrarán todos los dispositivos conectados a Alexa",
       icon: <FaCog />
    },
    {
@@ -92,7 +92,9 @@ const InstructionScreen3 = () => {
          <h3 className="text-center text-secondary">{instruction.text}</h3>
          <div className="d-flex flex-column align-items-center" style={{ minHeight: '60vh' }}>
             <img src={instruction.image} alt="step1" className="img-fluid mb-4" />
-            <p>{instruction.textBelow}</p>
+            <div className="bg-white rounded shadow w-75 mb-2">
+               <p className="text-center m-0" style={{ fontSize: '1.1rem', color: '#333' }}>{instruction.textBelow}</p>
+            </div>
          </div>
 
          <ProgressBar now={progress} label={`${Math.round(progress)}%`} className="mb-4" />

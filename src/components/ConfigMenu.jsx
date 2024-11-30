@@ -6,7 +6,7 @@ function ConfigMenu() {
 
    return (
       <div className="config-menu-container">
-         <h1 className="text-center mt-4 text-primary">Menú de Configuración</h1>
+         <h1 className="text-center mt-4 text-primary">Menú de Configuraciónes</h1>
          <div className="container mt-4 d-flex flex-column align-items-center">
 
             {/* Tarjeta 1 - Borrar comandos de voz */}

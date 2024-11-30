@@ -164,6 +164,13 @@ class ActionProvider {
       this.addMessageToState(message);
    };
 
+   acercaHistorialVoz = () => {
+      const message = this.createChatBotMessage(
+         "El historial de voz en Alexa no es completamente privado. Los desarrolladores pueden acceder a tus grabaciones, y algunas no se pueden borrar del todo. Incluso aunque revises y borres tus grabaciones todas las noches, es posible que todavía se conserve un registro de grabaciones pasadas."
+      );
+      this.addMessageToState(message);
+   };
+
    handleJavascriptQuiz = () => {
       const message = this.createChatBotMessage(
          "Cada cierto tiempo, recibirás un recordatorio amistoso para que te acuerdes de borrar las grabaciones de Alexa. Esto es muy útil si quieres mantener tu historial limpio y sin dejar rastro de lo que has dicho.",

@@ -8,6 +8,12 @@ import vul2 from '../assets/vulnerabilidades/vul2.jpg';
 import vul3 from '../assets/vulnerabilidades/vul3.jpg';
 import vul4 from '../assets/vulnerabilidades/vul4.jpg';
 import vul5 from '../assets/vulnerabilidades/vul5.jpg';
+
+import dilanpic from '../assets/profileimgs/dilan.png';
+import eliaspic from '../assets/profileimgs/elias.jpg';
+import israelpic from '../assets/profileimgs/israel.png';
+
+import settingsImg from '../assets/settings.png';
 import Modal from "react-modal";
 
 // Establecer el elemento del modal en el DOM
@@ -276,52 +282,86 @@ function Home() {
 
          <div className="container">
             <br /><br /><br /><br /><br /><br /><br />
-            <h2 className="text-center my-5" style={{ fontSize: '2.5rem', fontWeight: 'bold', color: '#007bff' }}>
-               Acerca de Alexa Secure
-            </h2>
-            <p style={{ fontSize: '1.1rem', lineHeight: '1.6', color: '#333' }}>
-               Alexa Secure es una guía interactiva que te ayuda a configurar tu Alexa de forma fácil y segura. Nuestro objetivo es proteger tu privacidad mientras disfrutas de todas sus funciones, minimizando riesgos como accesos no autorizados o uso indebido de datos. Tu seguridad, nuestra prioridad.
-            </p>
+            <section className="container my-5 d-flex align-items-center flex-column" style={{ height: '70vh' }}>
+               {/* Título de la sección */}
+               <h2 className="text-center mb-4" style={{ fontSize: '2.5rem', fontWeight: 'bold', color: '#007bff' }}>
+                  Acerca de Alexa Secure
+               </h2>
+
+               {/* Contenedor flexible */}
+               <div className="row align-items-center">
+                  {/* Columna para el texto */}
+                  <div className="col-md-6">
+                     <p style={{ fontSize: '1.2rem', lineHeight: '1.8', color: '#333', textAlign: 'justify' }}>
+                        A través de pasos interactivos y fáciles de seguir, te ayudamos a configurar tu dispositivo de manera segura, mitigando riesgos como accesos no autorizados, grabaciones accidentales o uso indebido de datos. ¡Haz de tu experiencia con Alexa algo seguro y eficiente!
+                     </p>
+                  </div>
+
+                  {/* Columna para la imagen */}
+                  <div className="col-md-6 text-center">
+                     <img
+                        src={settingsImg}/* Reemplaza con una URL real */
+                        alt="Alexa Secure"
+                        className="img-fluid"
+                        style={{ maxWidth: '100%', height: 'auto' }}
+                     />
+                  </div>
+               </div>
+            </section>
+
             <br /><br /><br /><br /><br /><br /><br />
-            <h2 className="text-center my-5" style={{ fontSize: '2.5rem', fontWeight: 'bold', color: '#007bff' }}>
-               Equipo 1 Taller de Investigación 2
-            </h2>
             <div className="container mt-5">
+               <h2 className="text-center mb-4" style={{ fontSize: '2.5rem', fontWeight: 'bold', color: '#007bff' }}>
+                  Conoce a nuestro equipo
+               </h2>
                <div className="row text-center">
                   {/* Columna 1 */}
                   <div className="col-md-4 mb-4">
-                     <img
-                        src="https://avatars.githubusercontent.com/u/119697279?v=4"
-                        alt="Imagen 1"
-                        className="img-fluid rounded-circle mb-3"
-                        style={{ width: '150px', height: '150px', objectFit: 'cover' }}
-                     />
-                     <p>Jesús Elías Sierra Ruíz</p>
+                     <div className="card border-0 shadow-sm p-3">
+                        <img
+                           src={eliaspic}
+                           alt="Jesús Elías Sierra Ruíz"
+                           className="img-fluid rounded-circle mx-auto mb-3"
+                           style={{ width: '150px', height: '150px', objectFit: 'cover', transition: 'transform 0.3s' }}
+                           onMouseOver={(e) => (e.currentTarget.style.transform = 'scale(1.1)')}
+                           onMouseOut={(e) => (e.currentTarget.style.transform = 'scale(1)')}
+                        />
+                        <h5 className="mb-0">Jesús Elías Sierra Ruíz</h5>
+                     </div>
                   </div>
 
                   {/* Columna 2 */}
                   <div className="col-md-4 mb-4">
-                     <img
-                        src="https://avatars.githubusercontent.com/u/90223932?v=4"
-                        alt="Imagen 2"
-                        className="img-fluid rounded-circle mb-3"
-                        style={{ width: '150px', height: '150px', objectFit: 'cover' }}
-                     />
-                     <p>Dilan Mauricio García Hernández</p>
+                     <div className="card border-0 shadow-sm p-3">
+                        <img
+                           src={dilanpic}
+                           alt="Dilan Mauricio García Hernández"
+                           className="img-fluid rounded-circle mx-auto mb-3"
+                           style={{ width: '150px', height: '150px', objectFit: 'cover', transition: 'transform 0.3s' }}
+                           onMouseOver={(e) => (e.currentTarget.style.transform = 'scale(1.1)')}
+                           onMouseOut={(e) => (e.currentTarget.style.transform = 'scale(1)')}
+                        />
+                        <h5 className="mb-0">Dilan Mauricio García Hernández</h5>
+                     </div>
                   </div>
 
                   {/* Columna 3 */}
                   <div className="col-md-4 mb-4">
-                     <img
-                        src="https://avatars.githubusercontent.com/u/51183597?v=4"
-                        alt="Imagen 3"
-                        className="img-fluid rounded-circle mb-3"
-                        style={{ width: '150px', height: '150px', objectFit: 'cover' }}
-                     />
-                     <p>Israel Chacón Rojo</p>
+                     <div className="card border-0 shadow-sm p-3">
+                        <img
+                           src={israelpic}
+                           alt="Israel Chacón Rojo"
+                           className="img-fluid rounded-circle mx-auto mb-3"
+                           style={{ width: '150px', height: '150px', objectFit: 'cover', transition: 'transform 0.3s' }}
+                           onMouseOver={(e) => (e.currentTarget.style.transform = 'scale(1.1)')}
+                           onMouseOut={(e) => (e.currentTarget.style.transform = 'scale(1)')}
+                        />
+                        <h5 className="mb-0">Israel Chacón Rojo</h5>
+                     </div>
                   </div>
                </div>
             </div>
+
             <br /><br /><br /><br /><br /><br /><br />
 
          </div>

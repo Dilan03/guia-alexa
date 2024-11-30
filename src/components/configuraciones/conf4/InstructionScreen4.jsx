@@ -8,6 +8,7 @@ import imgstep3 from '../../../assets/conf4/step3.png'
 import imgstep4 from '../../../assets/conf4/step4.png'
 import imgstep5 from '../../../assets/conf4/step5.png'
 import imgstep6 from '../../../assets/conf4/step6.png'
+import imgstep7 from '../../../assets/conf4/step7.png'
 
 // Definición de los pasos/instrucciones
 const instructions = [
@@ -15,41 +16,48 @@ const instructions = [
       id: 1,
       text: "Paso 1: Elegir la opción de 'Más'",
       image: imgstep1,
-      textBelow: 'Opción de "Más"',
+      textBelow: 'Localizar la opcion de "Más" donde indica la flecha',
       icon: <FaCog />
    },
    {
       id: 2,
       text: "Paso 2: Localiza la opción de Configuración",
       image: imgstep2,
-      textBelow: null,
+      textBelow: "En el icono del engranaje",
       icon: <FaCog />
    },
    {
       id: 3,
       text: "Paso 3: Entra en la opción de Configuración del Dispositivo",
       image: imgstep3,
-      textBelow: null,
+      textBelow: "En la tercera opcion de arriba a abajo",
       icon: <FaCog />
    },
    {
       id: 4,
-      text: "Paso 4: Entra en el icono de configuración de la parte superior derecha",
+      text: "Paso 4: Elige el dispositivo",
       image: imgstep4,
       textBelow: null,
       icon: <FaCog />
    },
    {
       id: 5,
-      text: "Paso 5: Entra en la opción de Palabra de Activación",
+      text: "Paso 5: Entra en el icono de configuración de la parte superior derecha",
       image: imgstep5,
-      textBelow: null,
+      textBelow: "En el icono del engranaje",
       icon: <FaCog />
    },
    {
       id: 6,
-      text: "Paso 6: Aquí, podrás cambiar la palabra de activación de tu dispositivo",
+      text: "Paso 6: Entra en la opción de Palabra de Activación",
       image: imgstep6,
+      textBelow: "En la quinta opcion de arriba a abajo",
+      icon: <FaCog />
+   },
+   {
+      id: 7,
+      text: "Paso 7: Aquí, podrás cambiar la palabra de activación de tu dispositivo",
+      image: imgstep7,
       textBelow: null,
       icon: <FaCog />
    },
@@ -100,7 +108,9 @@ const InstructionScreen4 = () => {
          <h3 className="text-center text-secondary">{instruction.text}</h3>
          <div className="d-flex flex-column align-items-center" style={{ minHeight: '60vh' }}>
             <img src={instruction.image} alt="step1" className="img-fluid mb-4" />
-            <p>{instruction.textBelow}</p>
+            <div className="bg-white rounded shadow w-75 mb-2">
+               <p className="text-center m-0" style={{ fontSize: '1.1rem', color: '#333' }}>{instruction.textBelow}</p>
+            </div>
          </div>
 
          <ProgressBar now={progress} label={`${Math.round(progress)}%`} className="mb-4" />
