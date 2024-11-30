@@ -1,25 +1,47 @@
 import { useNavigate } from "react-router-dom";
 import { GrSecure } from "react-icons/gr";
+import { Navbar, Nav } from "react-bootstrap";
 
 function Header() {
    const navigate = useNavigate();
 
    return (
-      <header className="header py-3 bg-primary text-white d-flex align-items-center">
-         {/* Ícono junto al texto de Alexa Secure */}
-         <h1 className="m-0 d-flex align-items-center mx-5" style={{ fontSize: '20px' }} onClick={() => navigate("/")}>
-            <GrSecure className="me-2" size={55} /> Alexa Secure
-         </h1>
+      <Navbar bg="primary" variant="dark" expand="lg" className="py-3">
+         <div className="container d-flex align-items-center">
+            {/* Logo y título de Alexa Secure */}
+            <Navbar.Brand
+               className="d-flex align-items-center pointer"
+               onClick={() => navigate("/")}
+               style={{ fontSize: '20px' }}
+            >
+               <GrSecure className="me-2" size={35} />
+               <strong>Alexa Secure</strong>
+            </Navbar.Brand>
 
-         {/* Enlace estilizado para volver a Home */}
-         <div
-            className="text-light me-5 pointer"
-            onClick={() => navigate("/")}
-            style={{ cursor: 'pointer', fontSize: '16px' }}
-         >
-            Home
+            {/* Navbar toggle para dispositivos móviles */}
+            <Navbar.Toggle aria-controls="navbar-nav" />
+
+            {/* Menú de navegación */}
+            <Navbar.Collapse id="navbar-nav">
+               <Nav className=""> {/* Alinea el contenido a la derecha */}
+                  <Nav.Link
+                     className="text-light nav-link-hover"
+                     onClick={() => navigate("/")}
+                     style={{ fontSize: '16px' }}
+                  >
+                     Home
+                  </Nav.Link>
+                  <Nav.Link
+                     className="text-light nav-link-hover"
+                     onClick={() => navigate("/notificaciones")}
+                     style={{ fontSize: '16px' }}
+                  >
+                     Notificaciones
+                  </Nav.Link>
+               </Nav>
+            </Navbar.Collapse>
          </div>
-      </header>
+      </Navbar>
    );
 }
 

@@ -3,7 +3,7 @@ import { ProgressBar, Modal, Button } from 'react-bootstrap';
 import { FaArrowLeft, FaArrowRight, FaCog, FaSmile } from 'react-icons/fa';
 import { FaTrashAlt } from 'react-icons/fa';
 import { useNavigate } from "react-router-dom";
-import imgstep1 from '../../../assets/conf2/step1.png'
+import imgstep1 from '../../../assets/conf2/step1.gif'
 import imgstep2 from '../../../assets/conf2/step2.png'
 import imgstep3 from '../../../assets/conf2/step3.png'
 import imgstep4 from '../../../assets/conf2/step4.png'
@@ -147,18 +147,92 @@ const InstructionScreen2 = () => {
          </div>
 
          {/* Modal de felicitación */}
-         <Modal show={showModal} onHide={() => navigate("/config-menu")} centered>
-            <Modal.Header closeButton>
-               <Modal.Title>¡Felicidades!</Modal.Title>
+         <Modal
+            show={showModal}
+            onHide={() => navigate("/config-menu")}
+            centered
+            style={{
+               backdropFilter: 'blur(5px)', // Fondo difuminado
+               borderRadius: '10px',
+               boxShadow: '0 0 20px rgba(0, 123, 255, 0.5)',
+            }}
+         >
+            <Modal.Header
+               closeButton
+               style={{
+                  backgroundColor: '#007BFF', // Fondo azul del encabezado
+                  color: '#fff', // Texto blanco
+                  textAlign: 'center',
+                  borderBottom: '3px solid lightblue',
+               }}
+            >
+               <Modal.Title style={{ fontSize: '1.8rem', fontWeight: 'bold' }}>
+                  🎉 ¡Felicidades!
+               </Modal.Title>
             </Modal.Header>
-            <Modal.Body className="text-center">
-               <FaSmile size={50} color="lightblue" />
-               <h4>¡Has completado todos los pasos!</h4>
-               <p>¡Gracias por seguir las instrucciones!</p>
+            <Modal.Body
+               className="text-center"
+               style={{
+                  padding: '20px',
+                  backgroundColor: '#f9f9ff',
+                  borderBottom: '2px solid lightblue',
+               }}
+            >
+               <FaSmile
+                  size={60}
+                  color="lightblue"
+                  style={{ marginBottom: '15px', textShadow: '0 0 10px lightblue' }}
+               />
+               <h4
+                  style={{
+                     fontSize: '1.5rem',
+                     color: '#333',
+                     marginBottom: '10px',
+                     fontWeight: 'bold',
+                  }}
+               >
+                  ¡Has completado todos los pasos!
+               </h4>
+               <p
+                  style={{
+                     fontSize: '1rem',
+                     color: '#555',
+                     marginBottom: '0',
+                  }}
+               >
+                  ¡Gracias por seguir las instrucciones!
+               </p>
             </Modal.Body>
-            <Modal.Footer>
-               <Button variant="secondary" onClick={() => navigate("/config-menu")}>
-                  Volver al Menú de Configuración
+            <Modal.Footer
+               style={{
+                  backgroundColor: '#007BFF',
+                  justifyContent: 'center',
+                  padding: '10px',
+               }}
+            >
+               <Button
+                  variant="light"
+                  style={{
+                     color: '#007BFF',
+                     fontWeight: 'bold',
+                     backgroundColor: '#fff',
+                     border: '2px solid #007BFF',
+                     borderRadius: '5px',
+                     padding: '10px 20px',
+                     boxShadow: '0 0 10px rgba(0, 123, 255, 0.5)',
+                     transition: 'all 0.3s ease',
+                  }}
+                  onMouseOver={(e) => {
+                     e.target.style.backgroundColor = '#007BFF';
+                     e.target.style.color = '#fff';
+                  }}
+                  onMouseOut={(e) => {
+                     e.target.style.backgroundColor = '#fff';
+                     e.target.style.color = '#007BFF';
+                  }}
+                  onClick={() => navigate("/config-menu")}
+               >
+                  Volver al Menú de Configuraciónes
                </Button>
             </Modal.Footer>
          </Modal>

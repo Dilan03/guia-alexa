@@ -11,7 +11,7 @@ const Quiz = (props) => {
    const currentQuestion = props.questions[questionIndex];
 
    if (!currentQuestion) {
-      return <p>Quiz over.</p>;
+      return <p>Pregunta algo más</p>;
    }
 
    return (

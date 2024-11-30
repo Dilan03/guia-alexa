@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { ProgressBar, Modal, Button } from 'react-bootstrap';
 import { FaArrowLeft, FaArrowRight, FaCog, FaSmile } from 'react-icons/fa';
-import imgstep1 from '../../../assets/conf1/step1.png'
+import imgstep1 from '../../../assets/conf1/step1.jpeg'
 import { FaTrashAlt } from 'react-icons/fa'; // Importar iconos de React Icons
 import { useNavigate } from "react-router-dom";
 
@@ -61,7 +61,7 @@ const InstructionScreen1 = () => {
          </div>
          <h3 className="text-center text-secondary">{instruction.text}</h3>
          <div className="d-flex flex-column align-items-center" style={{ minHeight: '60vh' }}>
-            <img src={imgstep1} alt="step1" className="img-fluid mb-4" />
+            <img src={imgstep1} alt="step1" className="img-fluid mb-4 rounded-2" />
             <p>Si dices: «Alexa, borra lo que dije hoy», tu dispositivo con Alexa borrará las grabaciones de voz diarias, y si realizas esta acción cada la noche antes de acostarte, te asegurarás de no dejar rastro de tus grabaciones de Alexa.</p>
          </div>
 
@@ -84,21 +84,96 @@ const InstructionScreen1 = () => {
          </div>
 
          {/* Modal de felicitación */}
-         <Modal show={showModal} onHide={() => navigate("/config-menu")} centered>
-            <Modal.Header closeButton>
-               <Modal.Title>¡Felicidades!</Modal.Title>
+         <Modal
+            show={showModal}
+            onHide={() => navigate("/config-menu")}
+            centered
+            style={{
+               backdropFilter: 'blur(5px)', // Fondo difuminado
+               borderRadius: '10px',
+               boxShadow: '0 0 20px rgba(0, 123, 255, 0.5)',
+            }}
+         >
+            <Modal.Header
+               closeButton
+               style={{
+                  backgroundColor: '#007BFF', // Fondo azul del encabezado
+                  color: '#fff', // Texto blanco
+                  textAlign: 'center',
+                  borderBottom: '3px solid lightblue',
+               }}
+            >
+               <Modal.Title style={{ fontSize: '1.8rem', fontWeight: 'bold' }}>
+                  🎉 ¡Felicidades!
+               </Modal.Title>
             </Modal.Header>
-            <Modal.Body className="text-center">
-               <FaSmile size={50} color="lightblue" />
-               <h4>¡Has completado todos los pasos!</h4>
-               <p>¡Gracias por seguir las instrucciones!</p>
+            <Modal.Body
+               className="text-center"
+               style={{
+                  padding: '20px',
+                  backgroundColor: '#f9f9ff',
+                  borderBottom: '2px solid lightblue',
+               }}
+            >
+               <FaSmile
+                  size={60}
+                  color="lightblue"
+                  style={{ marginBottom: '15px', textShadow: '0 0 10px lightblue' }}
+               />
+               <h4
+                  style={{
+                     fontSize: '1.5rem',
+                     color: '#333',
+                     marginBottom: '10px',
+                     fontWeight: 'bold',
+                  }}
+               >
+                  ¡Has completado todos los pasos!
+               </h4>
+               <p
+                  style={{
+                     fontSize: '1rem',
+                     color: '#555',
+                     marginBottom: '0',
+                  }}
+               >
+                  ¡Gracias por seguir las instrucciones!
+               </p>
             </Modal.Body>
-            <Modal.Footer>
-               <Button variant="secondary" onClick={() => navigate("/config-menu")}>
-                  Volver al Menú de Configuración
+            <Modal.Footer
+               style={{
+                  backgroundColor: '#007BFF',
+                  justifyContent: 'center',
+                  padding: '10px',
+               }}
+            >
+               <Button
+                  variant="light"
+                  style={{
+                     color: '#007BFF',
+                     fontWeight: 'bold',
+                     backgroundColor: '#fff',
+                     border: '2px solid #007BFF',
+                     borderRadius: '5px',
+                     padding: '10px 20px',
+                     boxShadow: '0 0 10px rgba(0, 123, 255, 0.5)',
+                     transition: 'all 0.3s ease',
+                  }}
+                  onMouseOver={(e) => {
+                     e.target.style.backgroundColor = '#007BFF';
+                     e.target.style.color = '#fff';
+                  }}
+                  onMouseOut={(e) => {
+                     e.target.style.backgroundColor = '#fff';
+                     e.target.style.color = '#007BFF';
+                  }}
+                  onClick={() => navigate("/config-menu")}
+               >
+                  Volver al Menú de Configuraciónes
                </Button>
             </Modal.Footer>
          </Modal>
+
       </div>
    );
 };

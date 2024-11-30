@@ -10,14 +10,14 @@ import InstructionScreen2 from "./components/configuraciones/conf2/InstructionSc
 import InstructionScreen3 from "./components/configuraciones/conf3/InstructionScreen3";
 import InstructionScreen4 from "./components/configuraciones/conf4/InstructionScreen4";
 import InstructionScreen5 from "./components/configuraciones/conf5/InstructionScreen5";
+import Notificaciones from "./components/Notificaciones";
 
 function AppRouter() {
    return (
 
       <Router>
-         <div className="container">
-
-            <Header />
+         <Header />
+         <div className="container-fluid p-0">
             <Routes>
                <Route path="/" element={<Home />} />
                <Route path="/vulnerabilities" element={<Vulnerabilities />} />
@@ -27,6 +27,7 @@ function AppRouter() {
                <Route path="/conf3" element={<InstructionScreen3 />} />
                <Route path="/conf4" element={<InstructionScreen4 />} />
                <Route path="/conf5" element={<InstructionScreen5 />} />
+               <Route path="/notificaciones" element={<Notificaciones />} />
             </Routes>
          </div>
          <Footer />

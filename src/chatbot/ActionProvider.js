@@ -10,6 +10,11 @@ class ActionProvider {
       this.addMessageToState(message);
    };
 
+   bye = () => {
+      const message = this.createChatBotMessage("Hasta Luego");
+      this.addMessageToState(message);
+   };
+
    borrarHistorial = () => {
       const message = this.createChatBotMessage(
          "Puedes decir: 'Alexa, borra lo que dije hoy' para eliminar las grabaciones diarias. Para eliminar grabaciones pasadas, abre la app Alexa, ve a Más > Configuración > Privacidad de Alexa > Consultar historial de voz y elimina todas las grabaciones."
@@ -161,12 +166,41 @@ class ActionProvider {
 
    handleJavascriptQuiz = () => {
       const message = this.createChatBotMessage(
-         "Fantastic. Here is your quiz. Good luck!",
+         "Cada cierto tiempo, recibirás un recordatorio amistoso para que te acuerdes de borrar las grabaciones de Alexa. Esto es muy útil si quieres mantener tu historial limpio y sin dejar rastro de lo que has dicho.",
          {
-            widget: "javascriptQuiz",
+            widget: "recordatorios",
          }
       );
 
+      this.addMessageToState(message);
+   };
+
+   handeAcercaDe = () => {
+      const message = this.createChatBotMessage(
+         "Te explicaré de que trata esta aplicación",
+         {
+            widget: "acerca de",
+         }
+      );
+
+      this.addMessageToState(message);
+   }
+
+   handleConfiguraciones = () => {
+      const message = this.createChatBotMessage(
+         "En la aplicación tenemos una sección interactiva que te guía paso a paso para mejorar la seguridad y privacidad de tu dispositivo Alexa.",
+         {
+            widget: "configuraciones",
+         }
+      );
+
+      this.addMessageToState(message);
+   }
+
+   noPuedoResponder = () => {
+      const message = this.createChatBotMessage(
+         "Lo siento, no puedo ayudarte con eso. Si tienes alguna otra consulta, por favor pregúntame y trataré de ayudarte."
+      );
       this.addMessageToState(message);
    };
 

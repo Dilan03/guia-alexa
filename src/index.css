@@ -51,3 +51,71 @@ body {
   font-size: 1.25rem;
   font-weight: bold;
 }
+
+/* Estilo para los enlaces en el Navbar */
+.nav-link-hover {
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Efecto de hover para los enlaces */
+.nav-link-hover:hover {
+  color: #f8f9fa !important;
+  /* Color de texto en hover */
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  /* Fondo translúcido en hover */
+  border-radius: 5px;
+  /* Bordes redondeados para un mejor efecto */
+}
+
+/* Añade esta clase a tu archivo CSS */
+.aura-animation {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  border-radius: 10px;
+  /* Opcional, para esquinas redondeadas */
+}
+
+.aura-animation::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+  /* Igual que la imagen */
+  z-index: -1;
+  background: rgba(0, 123, 255, 0.5);
+  box-shadow: 0 0 20px 10px rgba(0, 123, 255, 0.5);
+  animation: pulse 2s infinite;
+  /* Animación de pulso */
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 20px 10px rgba(0, 123, 255, 0.5);
+  }
+
+  50% {
+    box-shadow: 0 0 30px 15px rgba(0, 123, 255, 0.7);
+  }
+
+  100% {
+    box-shadow: 0 0 20px 10px rgba(0, 123, 255, 0.5);
+  }
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
